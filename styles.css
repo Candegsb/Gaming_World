@@ -55,7 +55,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    background: url('/media/images/hero-bg.png') no-repeat center center/cover;
+    background: url('hero-bg.png') no-repeat center center/cover;
     color: #32CD32;
 }
 
@@ -72,8 +72,9 @@ header {
 }
 
 .hero-image img {
-    max-width: 100%;
+    max-width: 75%;
     height: auto;
+    display: block;
 }
 
 /* Grid Section */
@@ -101,6 +102,12 @@ header {
 .grid-item:hover {
     transform: translateY(-5px);
     background: #444;
+}
+
+.grid-item h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
 }
 
 /* Footer */
@@ -137,6 +144,11 @@ footer {
     transform: scale(1.1);
 }
 
+.footer-text {
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
     .hero {
@@ -152,6 +164,10 @@ footer {
         font-size: 1.8rem;
     }
 
+    .hero-image img {
+        margin-top: 1rem;
+    }
+
     .nav-links {
         flex-direction: column;
         gap: 0.5rem;
@@ -160,5 +176,28 @@ footer {
     .footer-content {
         flex-direction: column;
         text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .grid-section {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .grid-item {
+        padding: 0.5rem;
+    }
+
+    .footer-text {
+        font-size: 0.9rem;
     }
 }
