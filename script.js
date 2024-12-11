@@ -39,3 +39,30 @@ function showSlides(n) {
   slides[slideIndex].style.display = "block";
   dots[slideIndex].className += " active";
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Inicializar Parsley.js para la validación del formulario
+  $('#contact-form').parsley();
+});
+
+// Validación personalizada para el campo de email
+window.Parsley.addValidator('emailDomain', {
+  validateString: function(value) {
+      return value.includes('@example.com');
+  },
+  messages: {
+      en: 'The email must be from @example.com'
+  }
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+  $('#contact-form').parsley();
+});
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+  const message = document.getElementById('message').value;
+  if (!message.trim()) {
+      alert('Please write a message.');
+      event.preventDefault(); // Evita el envío del formulario
+  }
+});
