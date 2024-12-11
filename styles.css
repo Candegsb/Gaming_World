@@ -55,7 +55,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    background: url('hero-bg.png') no-repeat center center/cover;
+    background: url('Media/Images/Fondo_inicio.png') no-repeat center center/cover;
     color: #32CD32;
 }
 
@@ -113,10 +113,14 @@ header {
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    max-width: 100%;
-    margin: auto;
-    overflow: hidden;
-  }
+    max-width: 80%; /* Ajusta el tamaño total del carrusel */
+    margin: 2rem auto; /* Centra el carrusel y añade espacio alrededor */
+    border: 5px solid #444; /* Borde del frame */
+    border-radius: 10px; /* Bordes redondeados */
+    background-color: #000; /* Fondo para resaltar las imágenes */
+    overflow: hidden; /* Oculta cualquier contenido fuera del marco */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Sombra elegante */
+}
   
   /* Slides */
   .slide {
