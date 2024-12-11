@@ -5,12 +5,19 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'BlackOps';
+    src: url('Fonts/Call\ of\ Ops\ Duty.otf') format('woff2'),
+         url('Fonts/Call\ of\ Ops\ Duty.otf') format('woff');
+  }
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: #fff;
+    font-family:'BlackOps', sans-serif;
+    background-color: #0c0c0c;
+    color: #000000;
     line-height: 1.6;
     overflow-x: hidden;
+    font-size: 1.5em;
 }
 
 /* Header */
@@ -55,9 +62,24 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
-    background: url('Media/Images/Fondo_inicio.png') no-repeat center center/cover;
+    background: url('Media/Images/Fondo_incicial.jpg') no-repeat center center/cover;
     color: #32CD32;
+    position: relative;
+    width: 100%;
+    height: 100vh; /* O ajusta al tamaño necesario */
+    background-size: cover;
+    overflow: hidden; /* Asegura que no haya elementos fuera del contenedor */
 }
+
+
+.character {
+    position: absolute;
+    bottom: 0; /* Ajusta la posición */
+    right: 0; /* Cambia a `left` si quieres alinearlo a la izquierda */
+    width: auto; /* Controla el tamaño con `width` o `height` */
+    height: 80%; /* Ajusta según sea necesario */
+    transform: translateX(-50px); /* Ajusta el desplazamiento horizontal */
+  }
 
 .hero-text h1 {
     font-size: 3rem;
@@ -86,7 +108,7 @@ header {
 }
 
 .grid-item {
-    background: #333;
+    background: #32CD32;
     padding: 1rem;
     text-align: center;
     border-radius: 5px;
@@ -101,7 +123,7 @@ header {
 
 .grid-item:hover {
     transform: translateY(-5px);
-    background: #444;
+    background: #68e768;
 }
 
 .grid-item h3 {
@@ -113,13 +135,13 @@ header {
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    max-width: 80%; /* Ajusta el tamaño total del carrusel */
-    margin: 2rem auto; /* Centra el carrusel y añade espacio alrededor */
-    border: 5px solid #444; /* Borde del frame */
-    border-radius: 10px; /* Bordes redondeados */
-    background-color: #000; /* Fondo para resaltar las imágenes */
-    overflow: hidden; /* Oculta cualquier contenido fuera del marco */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); /* Sombra elegante */
+    max-width: 80%; 
+    margin: 2rem auto; 
+    border: 5px solid #32CD32; 
+    border-radius: 10px; 
+    background-color: #000; 
+    overflow: hidden; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7); 
 }
   
   /* Slides */
