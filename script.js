@@ -1,12 +1,11 @@
 // Inicializa la variable de índice
 let slideIndex = 0;
 
-// Muestra la primera diapositiva al cargar la página
 document.addEventListener("DOMContentLoaded", () => {
-  showSlides(slideIndex); // Llama a la función una vez la página ha cargado
+  showSlides(slideIndex); 
 });
 
-// Función para cambiar de diapositiva
+// Para cambiar de diapositiva
 function changeSlide(n) {
   showSlides(slideIndex += n);
 }
@@ -63,6 +62,6 @@ document.getElementById('contact-form').addEventListener('submit', function(even
   const message = document.getElementById('message').value;
   if (!message.trim()) {
       alert('Please write a message.');
-      event.preventDefault(); // Evita el envío del formulario
+      event.preventDefault(); // Evita el envío del formulario (ya que no es "real")
   }
 });

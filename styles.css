@@ -1,4 +1,3 @@
-/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -70,21 +69,22 @@ header {
     color: #32CD32;
     position: relative;
     width: 100%;
-    height: 100vh; /* O ajusta al tamaño necesario */
+    height: 100vh; 
     background-size: cover;
-    overflow: hidden; /* Asegura que no haya elementos fuera del contenedor */
+    overflow: hidden; 
 }
 
-
+/* PERSONAJE PORTADA -- (Necesitabamos meterlo para alinear al personaje con el fondo de detrás) */
 .character {
     position: absolute;
-    bottom: 0; /* Ajusta la posición */
-    right: 0; /* Cambia a `left` si quieres alinearlo a la izquierda */
-    width: auto; /* Controla el tamaño con `width` o `height` */
-    height: 80%; /* Ajusta según sea necesario */
-    transform: translateX(-50px); /* Ajusta el desplazamiento horizontal */
-  }
+    bottom: 0;
+    right: 0; 
+    width: auto; 
+    height: 80%; 
+    transform: translateX(-50px); 
+}
 
+/* TEXTO PORTADA (HERO) */
 .hero-text h1 {
     font-size: 4rem;
     font-weight: bold;
@@ -137,7 +137,7 @@ header {
     margin-bottom: 0.5rem;
 }
 
-/* Slideshow container */
+/* CARRUSEL/SLIDESHOW CONTAINER */
 .slideshow-container {
     position: relative;
     max-width: 80%; 
@@ -171,7 +171,7 @@ header {
     box-sizing: border-box;
   }
   
-  /* Next and previous buttons */
+  /* BOTONES DEL CARRUSEL DE ANTES Y DESPUÉS  */
   .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -187,12 +187,12 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
     border-radius: 0 3px 3px 0;
   }
-  
+  /* ANTES */
   .prev {
     left: 0;
     border-radius: 3px 0 0 3px;
   }
-  
+  /* DESPUÉS */
   .next {
     right: 0;
     border-radius: 0 3px 3px 0;
@@ -202,7 +202,7 @@ header {
     background-color: rgba(0, 0, 0, 0.8);
   }
   
-  /* Dots */
+  /* PUTOS DE DEBAJO DEL CARRUSEL */
   .dots-container {
     text-align: center;
     position: relative;
@@ -284,7 +284,7 @@ footer {
     color: white;
     text-align: center;
     position: relative;
-    width: 100%; /* Asegura que el footer ocupe el ancho completo */
+    width: 100%; 
 }
 
 .footer-content {
@@ -317,6 +317,9 @@ footer {
     font-size: 1rem;
     margin-top: 1rem;
 }
+
+
+
 
 /* Media Queries */
 @media (max-width: 768px) {
